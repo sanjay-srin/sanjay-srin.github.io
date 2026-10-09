@@ -31,7 +31,7 @@ export const deepscope = {
   status: "Accepted for publication, Springer Nature Applied Water Science (sole author)",
   stack: ["Python", "PyTorch", "Flask", "Swift", "Core ML", "Android"],
   summary:
-    "A smartphone app that uses a trained CNN to tell whether a water sample is safe. Field-tested on 160 images from 14 water sources the model had never seen, it met **UNICEF's Target Product Profile** thresholds at about $0.44 per test.",
+    "A smartphone app that uses a trained CNN to tell whether a water sample is safe. Field-tested on a 100,000-image augmented set from 14 unseen water sources, it reached **92.79% accuracy** and **94.48% recall**, at a cost of about $0.44 per test.",
   pipeline: {
     trunk: [
       { name: "297 source images", note: "Collected dataset" },
@@ -58,10 +58,10 @@ export const deepscope = {
   },
   built: [
     "Trained and benchmarked **4 CNNs** in **PyTorch** using **transfer learning** and **dropout regularization**.",
-    "Designed a novel **tile-swap augmentation algorithm** that expanded 297 source images into **30,000 training samples** (100×) and a 100,000-image augmented field-test set, scoring **92.79% accuracy** and **94.48% recall**.",
+    "Designed a novel **tile-swap augmentation algorithm** that expanded 297 source images into **30,000 training samples** (100×), and built the 100,000-image augmented field-test set from 14 unseen water sources.",
     "Built a **backend Flask inference API** on DigitalOcean that serves predictions to an **Android app** over HTTP POST/JSON.",
     "Converted the PyTorch model to **Core ML** via TorchScript and built a **Swift iOS app** for fully offline, on-device inference.",
-    "Built **evaluation tools** for the precision-recall tradeoff (threshold tuning, bootstrap confidence intervals) that met UNICEF's Target Product Profile thresholds: 1.39% false-negative, 4.55% false-positive, at about $0.44 per test.",
+    "Built **evaluation tools** for the precision-recall tradeoff (threshold tuning, bootstrap confidence intervals) that met UNICEF's Target Product Profile thresholds.",
   ],
   links: [
     { label: "Read the paper on arXiv", href: "https://arxiv.org/abs/2603.06611" },

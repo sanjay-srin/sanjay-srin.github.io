@@ -59,7 +59,7 @@ Source of truth: `C:\Research_2026\SanjaySrinivasan_Resume.pdf`. Use its numbers
   - Simulation/lab: AutoDock Vina, ORCA (DFT), Avogadro, PyMOL, UV-Vis spectrophotometry, HPLC.
 - **DeepScope: Deep Learning Water Safety Classifier (2026)**
   - Accepted for publication, Springer Nature *Applied Water Science* (sole author); arXiv:2603.06611.
-  - Field test: 4 CNNs benchmarked; 96.88% accuracy / 98.61% recall on 160 images from 14 unseen sources.
+  - Site shows only (per Sanjay, 2026-10-09): 92.79% accuracy / 94.48% recall, field-tested on a 100,000-image augmented set from 14 unseen water sources. Don't show the 96.88%/98.61% or 1.39%/4.55% figures.
   - Tile-swap augmentation: 297 images → 30,000 training samples (100×). On a 100,000-image augmented field-test set: 92.79% accuracy / 94.48% recall.
   - Deployment: Flask API on DigitalOcean serving an Android app; Core ML via TorchScript for an offline Swift iOS app.
   - Evaluation pipeline met UNICEF Target Product Profile thresholds: 1.39% false-negative, 4.55% false-positive, about $0.44 per test.
