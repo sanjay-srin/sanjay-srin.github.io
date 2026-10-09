@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-09T07:35:27.173Z",
+  "title": "Design System: Sanjay Srinivasan",
+  "extensions": {
+    "colorMeta": {
+      "navy": {
+        "role": "primary",
+        "displayName": "Program Navy",
+        "canonical": "oklch(36.7% 0.115 257)",
+        "tonalRamp": [
+          "#000829",
+          "#002056",
+          "#103e7b",
+          "#305d9d",
+          "#5281c4",
+          "#77a6ea",
+          "#abcdfe",
+          "#dff0ff"
+        ]
+      },
+      "navy-deep": {
+        "role": "primary",
+        "displayName": "Night Navy",
+        "canonical": "oklch(31.1% 0.095 257)",
+        "tonalRamp": [
+          "#000829",
+          "#002150",
+          "#1c3f71",
+          "#395e92",
+          "#5b82b8",
+          "#7fa7e0",
+          "#abcdfe",
+          "#dff0ff"
+        ]
+      },
+      "red": {
+        "role": "secondary",
+        "displayName": "Jersey Red",
+        "canonical": "oklch(53.8% 0.200 23)",
+        "tonalRamp": [
+          "#220000",
+          "#4c0006",
+          "#76151a",
+          "#9d3435",
+          "#c35c58",
+          "#e28882",
+          "#fab7b2",
+          "#ffe5e2"
+        ]
+      },
+      "gold": {
+        "role": "tertiary",
+        "displayName": "Signal Gold",
+        "canonical": "oklch(81.1% 0.166 84)",
+        "tonalRamp": [
+          "#190600",
+          "#3b1c00",
+          "#5e3600",
+          "#815400",
+          "#a57800",
+          "#c59f4a",
+          "#e2c790",
+          "#fbedd2"
+        ]
+      },
+      "stock": {
+        "role": "neutral",
+        "displayName": "Paper Stock",
+        "canonical": "oklch(95.7% 0.015 94)",
+        "tonalRamp": [
+          "#0d0b05",
+          "#26241c",
+          "#424037",
+          "#605e54",
+          "#838076",
+          "#a7a59a",
+          "#cdcbc0",
+          "#f2efe4"
+        ]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "Cardstock Grey",
+        "canonical": "oklch(82.6% 0.014 93)",
+        "tonalRamp": [
+          "#0d0b05",
+          "#26241c",
+          "#424037",
+          "#605e55",
+          "#838077",
+          "#a7a59b",
+          "#cdcac0",
+          "#f2eee4"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Press Ink",
+        "canonical": "oklch(20.0% 0.009 264)",
+        "tonalRamp": [
+          "#090b0f",
+          "#222428",
+          "#3d4044",
+          "#5b5e63",
+          "#7e8085",
+          "#a2a5aa",
+          "#c8cbd0",
+          "#ebeef4"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "oklch(40.8% 0.007 106)",
+        "tonalRamp": [
+          "#0b0b08",
+          "#242421",
+          "#40403c",
+          "#5e5e5a",
+          "#80807c",
+          "#a5a5a0",
+          "#cbcbc6",
+          "#efefea"
+        ]
+      },
+      "on-navy-2": {
+        "role": "neutral",
+        "displayName": "Faded Navy Ink",
+        "canonical": "oklch(83.7% 0.034 256)",
+        "tonalRamp": [
+          "#030b19",
+          "#192534",
+          "#344152",
+          "#525f71",
+          "#748195",
+          "#97a6ba",
+          "#bdcce1",
+          "#e0f0ff"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The hero name only; Alfa Slab One uppercase."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section and project headings; uppercase slab."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Proof title, method steps, skill groups, lab org, school, lead award; uppercase slab."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading text in Roboto Condensed; résumé key words bolded."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Nav, sub-labels, fact labels, lane names, button text; uppercase 700, tracked."
+      },
+      "data": {
+        "displayName": "Data",
+        "purpose": "Measurements in the body face (Roboto Condensed) with tabular figures; no separate data font."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Single easing for every transition."
+      },
+      {
+        "name": "state-fast",
+        "value": "0.2s",
+        "purpose": "Button, nav and link hover colour changes."
+      },
+      {
+        "name": "state-scan",
+        "value": "0.3s",
+        "purpose": "Scan colour handoff on stages, ladder steps and award rows."
+      },
+      {
+        "name": "scan-pipeline",
+        "value": "480ms step / 1600ms rest",
+        "purpose": "Gold scan along the DeepScope pipeline, trunk then both lanes together."
+      },
+      {
+        "name": "scan-method",
+        "value": "900ms step / 1400ms rest",
+        "purpose": "Gold scan down the hydrogels method ladder."
+      },
+      {
+        "name": "scan-awards",
+        "value": "420ms step / 1800ms rest",
+        "purpose": "Gold scan down the recognition roll."
+      },
+      {
+        "name": "scan-gate",
+        "value": "in view at 35% threshold; never under prefers-reduced-motion",
+        "purpose": "Scan runs only while in view, clears when it leaves, and never starts under reduced motion; items are always visible at rest."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "pipeline-stack",
+        "value": "1080px"
+      },
+      {
+        "name": "single-column",
+        "value": "900px"
+      },
+      {
+        "name": "compact",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Gold email action on navy; the only gold control.",
+      "html": "<div class=\"ds-wrap\"><a class=\"ds-btn\" href=\"#\">Email Sanjay</a></div>",
+      "css": ":host{--navy:#0f3d7a;--navy-deep:#0b2f5f;--red:#c8202e;--gold:#f2b705;--stock:#f4f1e6;--card:#c9c6bc;--ink:#14161a;--ink-2:#4a4a46;--on-navy-2:#bccbe0;--frame:clamp(8px,1.1vw,14px);--ease:cubic-bezier(0.16,1,0.3,1);} .ds-wrap{background:var(--navy);padding:32px;} .ds-btn{display:inline-block;background:var(--gold);color:var(--ink);font-family:\"Roboto Condensed\", \"Arial Narrow\", sans-serif;font-weight:700;font-size:1rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:16px 26px;border-radius:0;transition:background-color .2s var(--ease),transform .2s var(--ease);} .ds-btn:hover{background:var(--stock);} .ds-btn:active{transform:translateY(1px);} .ds-btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px;}"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Uppercase underlined text link beside the primary button (Google Scholar, See the research).",
+      "html": "<div class=\"ds-wrap\"><a class=\"ds-quiet\" href=\"#\">Google Scholar</a><a class=\"ds-quiet\" href=\"#\">See the research</a></div>",
+      "css": ":host{--navy:#0f3d7a;--navy-deep:#0b2f5f;--red:#c8202e;--gold:#f2b705;--stock:#f4f1e6;--card:#c9c6bc;--ink:#14161a;--ink-2:#4a4a46;--on-navy-2:#bccbe0;--frame:clamp(8px,1.1vw,14px);--ease:cubic-bezier(0.16,1,0.3,1);} .ds-wrap{background:var(--navy);padding:32px;display:flex;gap:28px;} .ds-quiet{color:var(--stock);font-family:\"Roboto Condensed\", \"Arial Narrow\", sans-serif;font-weight:700;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;text-underline-offset:.2em;text-decoration-thickness:2px;} .ds-quiet:hover{color:var(--on-navy-2);} .ds-quiet:focus-visible{outline:3px solid var(--gold);outline-offset:3px;}"
+    },
+    {
+      "name": "Outbound Links",
+      "kind": "button",
+      "refersTo": "link-out-ink",
+      "description": "Square source links with arrow: ink outline for sources, solid navy for identifiers.",
+      "html": "<div class=\"ds-wrap\"><a class=\"ds-out ds-out--ink\" href=\"#\">ChemRxiv preprint <svg class=\"ds-arrow\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M3 13 13 3M5.5 3H13v7.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\"/></svg></a><a class=\"ds-out ds-out--solid\" href=\"#\">arXiv:2603.06611 <svg class=\"ds-arrow\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M3 13 13 3M5.5 3H13v7.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\"/></svg></a></div>",
+      "css": ":host{--navy:#0f3d7a;--navy-deep:#0b2f5f;--red:#c8202e;--gold:#f2b705;--stock:#f4f1e6;--card:#c9c6bc;--ink:#14161a;--ink-2:#4a4a46;--on-navy-2:#bccbe0;--frame:clamp(8px,1.1vw,14px);--ease:cubic-bezier(0.16,1,0.3,1);} .ds-wrap{background:var(--stock);padding:32px;display:flex;gap:12px;flex-wrap:wrap;} .ds-out{display:inline-flex;align-items:center;gap:8px;font-family:\"Roboto Condensed\", \"Arial Narrow\", sans-serif;font-weight:700;letter-spacing:.02em;text-decoration:none;transition:background-color .2s var(--ease),color .2s var(--ease);} .ds-arrow{transition:transform .25s var(--ease);} .ds-out:hover .ds-arrow{transform:translate(2px,-2px);} .ds-out--ink{color:var(--ink);border:2px solid var(--ink);padding:10px 16px;} .ds-out--ink:hover{background:var(--ink);color:var(--stock);} .ds-out--solid{background:var(--navy);color:var(--stock);padding:12px 18px;font-family:\"Roboto Condensed\", \"Arial Narrow\", sans-serif;} .ds-out--solid:hover{background:var(--ink);} .ds-out:focus-visible{outline:3px solid var(--gold);outline-offset:3px;}"
+    },
+    {
+      "name": "Top Band Navigation",
+      "kind": "nav",
+      "refersTo": "nav-mark",
+      "description": "Sticky navy band: red slab name mark, uppercase label links, gold Email.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-mark\" href=\"#\">Sanjay</a><nav class=\"ds-nav\"><a href=\"#\">Research</a><a href=\"#\">Skills</a><a href=\"#\">Recognition</a></nav><a class=\"ds-email\" href=\"#\">Email</a></header>",
+      "css": ":host{--navy:#0f3d7a;--navy-deep:#0b2f5f;--red:#c8202e;--gold:#f2b705;--stock:#f4f1e6;--card:#c9c6bc;--ink:#14161a;--ink-2:#4a4a46;--on-navy-2:#bccbe0;--frame:clamp(8px,1.1vw,14px);--ease:cubic-bezier(0.16,1,0.3,1);} .ds-top{display:flex;align-items:center;gap:32px;padding:14px 24px;background:var(--navy);border-bottom:2px solid var(--navy-deep);color:var(--stock);} .ds-mark{font-family:\"Alfa Slab One\", Georgia, serif;font-size:1.35rem;text-transform:uppercase;text-decoration:none;color:var(--stock);background:var(--red);padding:2px 12px 3px;} .ds-nav{display:flex;gap:28px;margin-left:auto;} .ds-nav a,.ds-email{font-family:\"Roboto Condensed\", \"Arial Narrow\", sans-serif;font-size:.875rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--stock);padding:6px 0;border-bottom:2px solid transparent;transition:border-color .2s var(--ease),background-color .2s var(--ease);} .ds-nav a:hover{border-color:var(--stock);} .ds-email{background:var(--gold);color:var(--ink);padding:8px 16px;border:0;} .ds-email:hover{background:var(--stock);} .ds-top a:focus-visible{outline:3px solid var(--gold);outline-offset:3px;}"
+    },
+    {
+      "name": "Proof Panel",
+      "kind": "card",
+      "refersTo": "panel-framed",
+      "description": "Red-framed stock sheet with slab title and a ruled fact list; hangs over a band seam.",
+      "html": "<aside class=\"ds-proof\"><div class=\"ds-proof-in\"><p class=\"ds-proof-title\">DeepScope: Deep Learning Water Safety Classifier</p><dl class=\"ds-facts\"><div><dt>Status</dt><dd>Accepted for publication</dd></div><div><dt>Authorship</dt><dd>Sole author</dd></div></dl><a class=\"ds-solid\" href=\"#\">arXiv:2603.06611</a></div></aside>",
+      "css": ":host{--navy:#0f3d7a;--navy-deep:#0b2f5f;--red:#c8202e;--gold:#f2b705;--stock:#f4f1e6;--card:#c9c6bc;--ink:#14161a;--ink-2:#4a4a46;--on-navy-2:#bccbe0;--frame:clamp(8px,1.1vw,14px);--ease:cubic-bezier(0.16,1,0.3,1);} .ds-proof{background:var(--red);padding:var(--frame);max-width:460px;} .ds-proof-in{background:var(--stock);color:var(--ink);padding:28px;font-family:\"Roboto Condensed\", \"Arial Narrow\", sans-serif;} .ds-proof-title{font-family:\"Alfa Slab One\", Georgia, serif;text-transform:uppercase;font-size:1.7rem;line-height:1.05;margin:0;} .ds-facts{margin:20px 0 24px;border-top:2px solid var(--ink);} .ds-facts div{display:grid;grid-template-columns:7.5rem 1fr;gap:12px;padding:9px 0;border-bottom:1px solid var(--card);} .ds-facts dt{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);padding-top:2px;} .ds-facts dd{margin:0;font-weight:700;} .ds-solid{display:inline-block;background:var(--navy);color:var(--stock);padding:12px 18px;font-family:\"Roboto Condensed\", \"Arial Narrow\", sans-serif;font-weight:700;text-decoration:none;transition:background-color .2s var(--ease);} .ds-solid:hover{background:var(--ink);} .ds-solid:focus-visible{outline:3px solid var(--gold);outline-offset:3px;}"
+    },
+    {
+      "name": "Project Panel",
+      "kind": "card",
+      "refersTo": "panel-framed",
+      "description": "Full-width stock sheet in a thick red frame: poster slab title, red uppercase subtitle, square red bullets, data-face measurements.",
+      "html": "<div class=\"ds-band\"><article class=\"ds-project\"><h3>DeepScope</h3><p class=\"ds-sub\">Deep learning water safety classifier</p><p class=\"ds-meta\">2026 · Accepted for publication</p><ul class=\"ds-built\"><li>Benchmarked <strong><span class=\"ds-data\">4</span> CNNs</strong> in PyTorch, reaching <strong><span class=\"ds-data\">96.88%</span> accuracy</strong>.</li></ul></article></div>",
+      "css": ":host{--navy:#0f3d7a;--navy-deep:#0b2f5f;--red:#c8202e;--gold:#f2b705;--stock:#f4f1e6;--card:#c9c6bc;--ink:#14161a;--ink-2:#4a4a46;--on-navy-2:#bccbe0;--frame:clamp(8px,1.1vw,14px);--ease:cubic-bezier(0.16,1,0.3,1);} .ds-band{background:var(--card);padding:32px;} .ds-project{background:var(--stock);color:var(--ink);border:var(--frame) solid var(--red);padding:40px;font-family:\"Roboto Condensed\", \"Arial Narrow\", sans-serif;font-size:1.125rem;line-height:1.5;} .ds-project h3{font-family:\"Alfa Slab One\", Georgia, serif;font-weight:400;text-transform:uppercase;font-size:3.5rem;line-height:.9;margin:0;} .ds-sub{font-size:1.3rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--red);margin:10px 0 0;} .ds-meta{color:var(--ink-2);font-size:1rem;margin:10px 0 0;} .ds-built{list-style:none;padding:0;margin:24px 0 0;} .ds-built li{position:relative;padding-left:22px;max-width:70ch;} .ds-built li::before{content:\"\";position:absolute;left:0;top:.6em;width:8px;height:8px;background:var(--red);} .ds-data{font-family:\"Roboto Condensed\", \"Arial Narrow\", sans-serif;font-variant-numeric:tabular-nums;white-space:nowrap;}"
+    },
+    {
+      "name": "Pipeline",
+      "kind": "custom",
+      "refersTo": "pipeline-stage",
+      "description": "Navy field of outlined night-navy stages joined by stock connectors; the live stage turns gold.",
+      "html": "<ol class=\"ds-pipe\"><li class=\"ds-stage\"><b>297 source images</b><span>Collected dataset</span></li><li class=\"ds-stage ds-live\"><b>Tile-swap augmentation</b><span>Novel algorithm</span></li><li class=\"ds-stage\"><b>4 CNNs benchmarked</b><span>PyTorch</span></li></ol>",
+      "css": ":host{--navy:#0f3d7a;--navy-deep:#0b2f5f;--red:#c8202e;--gold:#f2b705;--stock:#f4f1e6;--card:#c9c6bc;--ink:#14161a;--ink-2:#4a4a46;--on-navy-2:#bccbe0;--frame:clamp(8px,1.1vw,14px);--ease:cubic-bezier(0.16,1,0.3,1);} .ds-pipe{list-style:none;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:24px;background:var(--navy);color:var(--stock);font-family:\"Roboto Condensed\", \"Arial Narrow\", sans-serif;} .ds-stage{position:relative;background:var(--navy-deep);border:2px solid var(--stock);padding:12px 12px 14px;transition:background-color .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease);} .ds-stage b{display:block;line-height:1.2;} .ds-stage span{display:block;margin-top:6px;font-size:.875rem;line-height:1.35;color:var(--on-navy-2);} .ds-stage:not(:last-child)::after{content:\"\";position:absolute;top:50%;right:-20px;width:18px;height:2px;background:var(--stock);} .ds-stage.ds-live{background:var(--gold);border-color:var(--gold);color:var(--ink);} .ds-stage.ds-live span{color:var(--ink);}"
+    },
+    {
+      "name": "Method Ladder",
+      "kind": "custom",
+      "description": "Thick-thin ruled step list; slab navy step names, the live step blocked in gold.",
+      "html": "<div class=\"ds-method\"><ol><li><span class=\"ds-name\">Model</span><p>Wrote Python code to generate 3D molecular models.</p></li><li class=\"ds-live\"><span class=\"ds-name\">Screen</span><p>Screened them with molecular docking.</p></li></ol></div>",
+      "css": ":host{--navy:#0f3d7a;--navy-deep:#0b2f5f;--red:#c8202e;--gold:#f2b705;--stock:#f4f1e6;--card:#c9c6bc;--ink:#14161a;--ink-2:#4a4a46;--on-navy-2:#bccbe0;--frame:clamp(8px,1.1vw,14px);--ease:cubic-bezier(0.16,1,0.3,1);} .ds-method{background:var(--stock);color:var(--ink);padding:32px;font-family:\"Roboto Condensed\", \"Arial Narrow\", sans-serif;} .ds-method ol{list-style:none;padding:0;margin:0;position:relative;border-top:4px solid var(--ink);} .ds-method ol::before{content:\"\";position:absolute;left:0;right:0;top:-9px;height:1px;background:var(--ink);} .ds-method li{display:grid;grid-template-columns:7.5rem 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--card);} .ds-method p{margin:0;} .ds-name{align-self:start;justify-self:start;padding:2px 6px;margin-left:-6px;font-family:\"Alfa Slab One\", Georgia, serif;text-transform:uppercase;font-size:1.35rem;line-height:1.1;color:var(--navy);transition:background-color .3s var(--ease),color .3s var(--ease);} .ds-live .ds-name{background:var(--gold);color:var(--ink);}"
+    },
+    {
+      "name": "Awards Roll",
+      "kind": "custom",
+      "description": "Results board under a thick-thin rule; red years, red slab lead award, live row fills gold.",
+      "html": "<ul class=\"ds-awards\"><li><span class=\"ds-an\">Regeneron ISEF</span><span class=\"ds-lead\">4th Place Grand Award</span><span class=\"ds-yr\">2026</span></li><li class=\"ds-live\"><span class=\"ds-an\">Central Sound SEF</span><span>Grand Champion with Distinction</span><span class=\"ds-yr\"></span></li></ul>",
+      "css": ":host{--navy:#0f3d7a;--navy-deep:#0b2f5f;--red:#c8202e;--gold:#f2b705;--stock:#f4f1e6;--card:#c9c6bc;--ink:#14161a;--ink-2:#4a4a46;--on-navy-2:#bccbe0;--frame:clamp(8px,1.1vw,14px);--ease:cubic-bezier(0.16,1,0.3,1);} .ds-awards{list-style:none;margin:16px 0 0;padding:0;position:relative;border-top:4px solid var(--ink);background:var(--stock);color:var(--ink);font-family:\"Roboto Condensed\", \"Arial Narrow\", sans-serif;} .ds-awards::before{content:\"\";position:absolute;left:0;right:0;top:-9px;height:1px;background:var(--ink);} .ds-awards li{display:grid;grid-template-columns:1.2fr 1.4fr 4rem;gap:16px;align-items:baseline;padding:16px 12px;border-bottom:1px solid var(--card);transition:background-color .3s var(--ease);} .ds-an{font-weight:700;text-transform:uppercase;letter-spacing:.04em;} .ds-lead{font-family:\"Alfa Slab One\", Georgia, serif;text-transform:uppercase;font-size:1.35rem;color:var(--red);} .ds-yr{text-align:right;color:var(--red);font-weight:700;} .ds-awards li.ds-live{background:var(--gold);} .ds-awards li.ds-live .ds-yr{color:var(--ink);}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Team Program",
+    "overview": "The page is a heavyweight printed program in team colours: full-bleed bands of navy, cardstock grey, red and paper stock, with slab-serif uppercase headings at poster scale. Research is shown the way a program shows a starting line-up: big, framed and on paper. The two research projects are full-width framed sheets, not a grid of equal cards, and their methods are drawn out as diagrams and ladders.\n\nThe material is flat ink on stock. There are no gradients, no shadows and no rounded corners. Depth comes from one device only: a framed paper panel that hangs over the seam between two bands. Structure comes from rules: a thick rule opens a list, and hairlines divide its rows.\n\nMotion is a single idea: a gold scan, like a results board lighting up, that steps through a sequence while it is on screen, rests, and repeats. Everything is fully visible without it, and it does not run under reduced motion.",
+    "keyCharacteristics": [
+      "Full-bleed colour bands in a fixed team palette; every section owns one band colour.",
+      "Alfa Slab One uppercase at poster scale for headings; Roboto Condensed for everything read, including numbers (tabular figures for measurements).",
+      "Stock panels framed in thick solid red (or navy) borders, hanging over band seams.",
+      "Square everything: zero radius, square bullets, square-capped arrow.",
+      "Gold is a signal, never a decoration."
+    ],
+    "rules": [
+      {
+        "name": "The Band Order Rule",
+        "body": "Bands run navy hero, grey research, red skills, stock recognition, night-navy lab, navy experience, grey education, and a night-navy footer. Two adjacent bands never share a colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The Gold Means Go Rule",
+        "body": "Gold appears only where something is actionable or live: the email actions, the live scan item, and keyboard focus. Do not use it for headings, borders, badges or decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Measured Fact Rule",
+        "body": "Numbers stay in the body face with tabular figures; do not introduce a monospace or third face for figures (user rejected it).",
+        "section": "typography"
+      },
+      {
+        "name": "The Uppercase Slab Rule",
+        "body": "Alfa Slab One is always uppercase and always weight 400. Never use it for running text.",
+        "section": "typography"
+      },
+      {
+        "name": "The Overlap-Only Rule",
+        "body": "To lift something, frame it and hang it over a seam. Never add a shadow.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Thick-Thin Rule",
+        "body": "A list opens with a heavy rule (4px ink on stock, or 4px stock on red). The awards roll and the method ladder pair that heavy rule with a 1px hairline 4px above it. Rows below are divided by 1px hairlines (cardstock grey on stock, translucent stock on colour). The proof panel uses a 2px ink head rule with the same hairline rows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** give every section a full-bleed band from the palette, keeping the band order.",
+      "**Do** frame paper-stock panels in a thick solid red (or navy) border, and hang them over a band seam to show importance.",
+      "**Do** open lists with a heavy rule and divide rows with 1px hairlines; pair the heavy rule with a thin rule for ranked or sequential lists.",
+      "**Do** keep measurements in the body face with tabular figures, and bold the résumé's key words in body text.",
+      "**Do** keep gold for email actions, the live scan and keyboard focus.",
+      "**Do** keep every animated item fully visible at rest and turn the scan off under reduced motion."
+    ],
+    "donts": [
+      "**Don't** add shadows, gradients or rounded corners.",
+      "**Don't** lay out projects as a grid of equal cards; projects are full-width framed sheets.",
+      "**Don't** use gold for decoration, headings, frames or badges.",
+      "**Don't** set running text in Alfa Slab One, or add a monospace face for numbers.",
+      "**Don't** hide content behind the scan or behind scroll-triggered reveals."
+    ]
+  }
+}
