@@ -20,7 +20,7 @@ export const featured = {
   venue: "Springer Nature, Applied Water Science",
   role: "Sole author",
   shipped: "Flask API on DigitalOcean · Android app · offline iOS app",
-  link: { label: "doi:10.1007/s13201-026-02974-z", href: "https://doi.org/10.1007/s13201-026-02974-z" },
+  link: { label: "doi:10.1007/s13201-026-02974-z", href: "https://link.springer.com/article/10.1007/s13201-026-02974-z" },
 };
 
 export const deepscope = {
@@ -64,7 +64,7 @@ export const deepscope = {
     "Built **evaluation tools** for the precision-recall tradeoff (threshold tuning, bootstrap confidence intervals) that met UNICEF's Target Product Profile thresholds.",
   ],
   links: [
-    { label: "Read the paper in Applied Water Science", href: "https://doi.org/10.1007/s13201-026-02974-z" },
+    { label: "Read the paper in Applied Water Science", href: "https://link.springer.com/article/10.1007/s13201-026-02974-z" },
   ] as Link[],
 };
 
