@@ -8,7 +8,7 @@ const text = Roboto_Condensed({ subsets: ["latin"], variable: "--font-text" });
 export const metadata: Metadata = {
   title: "Sanjay Srinivasan | Research & Projects",
   description:
-    "Sanjay Srinivasan, high school ML researcher: DeepScope (accepted, Springer Nature Applied Water Science), computational hydrogel design (Regeneron ISEF 4th Place Grand Award), and UW lab research.",
+    "Sanjay Srinivasan, high school ML researcher: DeepScope (published in Applied Water Science), computational hydrogel design (Regeneron ISEF 4th Place Grand Award), and UW lab research.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -16,11 +16,11 @@ export const profile = {
 
 export const featured = {
   title: "DeepScope: Deep Learning Water Safety Classifier",
-  status: "Accepted for publication",
+  status: "Published in Applied Water Science",
   venue: "Springer Nature, Applied Water Science",
   role: "Sole author",
   shipped: "Flask API on DigitalOcean · Android app · offline iOS app",
-  link: { label: "arXiv:2603.06611", href: "https://arxiv.org/abs/2603.06611" },
+  link: { label: "doi:10.1007/s13201-026-02974-z", href: "https://doi.org/10.1007/s13201-026-02974-z" },
 };
 
 export const deepscope = {
@@ -28,7 +28,7 @@ export const deepscope = {
   title: "DeepScope",
   subtitle: "Deep learning water safety classifier",
   year: "2026",
-  status: "Accepted for publication, Springer Nature Applied Water Science (sole author)",
+  status: "Published in Applied Water Science (sole author)",
   stack: ["Python", "PyTorch", "Flask", "Swift", "Core ML", "Android"],
   summary:
     "A smartphone app that uses a trained CNN to tell whether a water sample is safe. Field-tested on a 100,000-image augmented set from 14 unseen water sources, it reached **92.79% accuracy** and **94.48% recall**, at a cost of about $0.44 per test.",
@@ -64,7 +64,7 @@ export const deepscope = {
     "Built **evaluation tools** for the precision-recall tradeoff (threshold tuning, bootstrap confidence intervals) that met UNICEF's Target Product Profile thresholds.",
   ],
   links: [
-    { label: "Read the paper on arXiv", href: "https://arxiv.org/abs/2603.06611" },
+    { label: "Read the paper in Applied Water Science", href: "https://doi.org/10.1007/s13201-026-02974-z" },
   ] as Link[],
 };
 
