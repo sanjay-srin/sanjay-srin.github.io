@@ -242,7 +242,7 @@ export default function Home() {
               <div>
                 <p className="edu-school">{education.school}</p>
                 <p>
-                  {education.place} · {education.dates}
+                  {education.place}
                 </p>
                 <p className="edu-gpa">
                   GPA <span className="data">{education.gpa}</span>

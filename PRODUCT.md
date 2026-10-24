@@ -12,7 +12,7 @@ React / Next.js (user's choice). No scaffold exists yet. Deploy target is undeci
 
 ## Users
 
-The primary audience is recruiters and screeners for industry tech and ML internship programs. They are evaluating Sanjay Srinivasan, a high school student (Eastlake High School, Sammamish, WA, class of 2028). They usually arrive from an application or résumé link, often on a laptop, sometimes on a phone. They are deciding quickly whether this candidate can do real engineering work despite being in high school.
+The primary audience is recruiters and screeners for industry tech and ML internship programs. They are evaluating Sanjay Srinivasan, a high school student (Eastlake High School, Sammamish, WA). They usually arrive from an application or résumé link, often on a laptop, sometimes on a phone. They are deciding quickly whether this candidate can do real engineering work despite being in high school.
 
 The site is publicly accessible, but it is designed for internship recruiters first. Labs, admissions readers, and judges may also visit; they are secondary, unconfirmed audiences.
 
@@ -50,7 +50,7 @@ None beyond his name, **Sanjay Srinivasan**, and the factual record below.
 
 Source of truth: `C:\Research_2026\SanjaySrinivasan_Resume.pdf`. Use its numbers and wording exactly; don't round or embellish.
 
-- **Education:** Eastlake High School, GPA 4.0/4.0, Sep 2024 – Jun 2028. Coursework includes Multivariable Calculus, Data Structures & Algorithms, AP CS A/Principles, AP Calc BC/AB, AP Physics 1, AP Macro/Micro.
+- **Education:** Eastlake High School, GPA 4.0/4.0. Coursework includes Multivariable Calculus, Data Structures & Algorithms, AP CS A/Principles, AP Calc BC/AB, AP Physics 1, AP Macro/Micro.
 - **Skills:**
   - Languages: Python, Java, Swift.
   - ML: PyTorch, TorchVision, CNNs, transfer learning, dropout, data augmentation, Core ML, TorchScript.

@@ -10,7 +10,6 @@ export const profile = {
   email: "s.srin2010@gmail.com",
   school: "Eastlake High School",
   location: "Sammamish, WA",
-  classOf: "2028",
   scholar: "https://scholar.google.com/citations?user=voBkcYAAAAAJ",
 };
 
@@ -175,7 +174,6 @@ export const skills = [
 export const education = {
   school: "Eastlake High School",
   place: "Sammamish, WA",
-  dates: "Sep 2024 – Jun 2028",
   gpa: "4.0 / 4.0",
   coursework: [
     "Multivariable Calculus",

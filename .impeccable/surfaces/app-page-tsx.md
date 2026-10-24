@@ -19,7 +19,7 @@ THESIS: A research portfolio set like a heavyweight printed program in team colo
 
 OWN-WORLD: The colours are user-pinned from the Rookie Card preview. The page runs as full-bleed team-colour bands in order: navy #0F3D7A hero, cardstock grey #C9C6BC research, red #C8202E skills, stock #F4F1E6 recognition, navy-deep #0B2F5F lab, navy experience, grey education (holding a red-framed stock panel), and a navy-deep footer with the email. Stock panels are framed in solid red (or navy) borders and hang over section seams. Gold #F2B705 appears only on the primary action and the live scan state. Type: Alfa Slab One uppercase for display, Roboto Condensed for text and controls (key words bolded as on the résumé), numbers in the body face with tabular figures (no monospace; user rejected it). Rules come in thick-thin pairs. Flat colour, no gradients, no shadows; depth comes from overlap only.
 
-STORY: The recruiter learns in seconds that a 2028 high school student published sole-authored ML research and shipped it to an API and two apps. They follow the methods, verify via arXiv, DOI and ISEF links, skim the lab role, awards and skills, and email.
+STORY: The recruiter learns in seconds that a high school student published sole-authored ML research and shipped it to an API and two apps. They follow the methods, verify via arXiv, DOI and ISEF links, skim the lab role, awards and skills, and email.
 
 FIRST VIEWPORT: Slab name at about 6rem on navy, left-aligned. A one-line positioning statement and a gold "Email Sanjay" button sit beneath it. On the right is an overlapping red-framed paper panel holding the DeepScope publication citation, with its arXiv link and status, as the proof object. The nav sits in a thin top band.
 
