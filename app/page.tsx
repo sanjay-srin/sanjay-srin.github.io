@@ -2,6 +2,7 @@ import { AwardsRoll, MethodLadder } from "./Animated";
 import CopyEmail from "./CopyEmail";
 import Measure from "./Measure";
 import Pipeline from "./Pipeline";
+import SkillIcon from "./SkillIcon";
 import { deepscope, education, experience, featured, hydrogels, lab, profile, skills, type Link } from "./content";
 
 function Arrow() {
@@ -176,7 +177,12 @@ export default function Home() {
                 <dd>
                   <ul>
                     {s.items.map((item) => (
-                      <li key={item}>{item}</li>
+                      <li key={item}>
+                        <span className="skill-tile">
+                          <SkillIcon name={item} />
+                        </span>
+                        {item}
+                      </li>
                     ))}
                   </ul>
                 </dd>

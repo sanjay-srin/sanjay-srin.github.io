@@ -593,25 +593,51 @@ strong {
   margin-bottom: clamp(24px, 3vw, 40px);
 }
 .skill-list {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 0 24px;
   border-top: 4px solid var(--stock);
 }
+/* one row per group: slab name on the left, a run of marked tiles on the right */
 .skill-list > div {
-  padding-top: 18px;
+  display: grid;
+  grid-template-columns: 14rem minmax(0, 1fr);
+  gap: 16px 32px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(244, 241, 230, 0.35);
 }
 .skill-list dt {
   font-family: var(--font-display);
   text-transform: uppercase;
   font-size: 1.15rem;
   line-height: 1.1;
-  margin-bottom: 12px;
+  padding-top: 18px;
+}
+.skill-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 8px;
 }
 .skill-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 104px;
+  font-size: 0.875rem;
   font-weight: 700;
-  padding: 7px 0;
-  border-bottom: 1px solid rgba(244, 241, 230, 0.35);
+  line-height: 1.2;
+  text-align: center;
+}
+.skill-tile {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  background: var(--stock);
+  color: var(--ink);
+}
+.skill-mark {
+  display: block;
+  width: 30px;
+  height: 30px;
 }
 
 /* ---------- Recognition ---------- */
@@ -872,13 +898,12 @@ strong {
   .edu-grid {
     grid-template-columns: 1fr;
   }
-  .skill-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    border-top: 0;
-  }
   .skill-list > div {
-    border-top: 4px solid var(--stock);
-    margin-bottom: 24px;
+    grid-template-columns: 1fr;
+    padding: 20px 0 24px;
+  }
+  .skill-list dt {
+    padding-top: 0;
   }
   .top nav {
     display: none;
@@ -939,10 +964,17 @@ strong {
   .course {
     columns: 1;
   }
-  .skill-list {
-    gap: 0 20px;
+  .skill-list ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(76px, 1fr));
+    gap: 16px 6px;
   }
-  .skill-list dt {
-    font-size: 1rem;
+  .skill-list li {
+    width: auto;
+    font-size: 0.8125rem;
+  }
+  .skill-tile {
+    width: 52px;
+    height: 52px;
   }
 }
