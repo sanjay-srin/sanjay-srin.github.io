@@ -5,12 +5,13 @@ import Measure from "./Measure";
 import { useScan } from "./useScan";
 
 // The hydrogels method ladder: the scan walks Model → Screen → Test → Report.
+// Pointing at a step takes the gold and pauses the scan.
 export function MethodLadder() {
-  const { ref, live } = useScan<HTMLOListElement>(hydrogels.method.length, 900, 1400);
+  const { ref, live, hold } = useScan<HTMLOListElement>(hydrogels.method.length, 900, 1400);
   return (
-    <ol ref={ref}>
+    <ol ref={ref} onMouseLeave={() => hold(null)}>
       {hydrogels.method.map((m, i) => (
-        <li key={m.name} className={live === i ? "is-live" : undefined}>
+        <li key={m.name} className={live === i ? "is-live" : undefined} onMouseEnter={() => hold(i)}>
           <span className="method-name">{m.name}</span>
           <p>
             <Measure text={m.text} />
@@ -22,12 +23,13 @@ export function MethodLadder() {
 }
 
 // Recognition: the scan runs down the honours roll like a results board.
+// Pointing at a row takes the gold and pauses the scan.
 export function AwardsRoll() {
-  const { ref, live } = useScan<HTMLUListElement>(awards.length, 420, 1800);
+  const { ref, live, hold } = useScan<HTMLUListElement>(awards.length, 420, 1800);
   return (
-    <ul className="awards" ref={ref}>
+    <ul className="awards" ref={ref} onMouseLeave={() => hold(null)}>
       {awards.map((a, i) => (
-        <li key={a.name + a.detail} className={live === i ? "is-live" : undefined}>
+        <li key={a.name + a.detail} className={live === i ? "is-live" : undefined} onMouseEnter={() => hold(i)}>
           <span className="award-name">{a.name}</span>
           <span className="award-detail">
             <Measure text={a.detail} />
