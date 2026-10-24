@@ -150,8 +150,7 @@ strong {
   border-bottom: 2px solid transparent;
   transition: border-color 0.2s var(--ease);
 }
-.top nav a:hover,
-.top nav a[aria-current] {
+.top nav a:hover {
   border-color: var(--stock);
 }
 
@@ -440,70 +439,15 @@ strong {
 }
 
 /* Pipeline diagram */
-.pipeline-wrap {
-  margin-top: clamp(28px, 3.5vw, 44px);
-  background: var(--navy);
-  color: var(--stock);
-}
 .pipeline {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
   gap: 0 28px;
   align-items: center;
+  margin-top: clamp(28px, 3.5vw, 44px);
   padding: clamp(18px, 2vw, 28px);
-}
-
-/* Trace readout: names the path to the picked stage */
-.trace {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 4px 0;
-  min-height: 3.2em;
-  margin: 0 clamp(18px, 2vw, 28px);
-  padding: 12px 0 clamp(14px, 1.6vw, 22px);
-  border-top: 1px solid rgb(244 241 230 / 0.28);
-  font-size: 0.95rem;
-  line-height: 1.35;
-}
-.trace-label {
-  margin-right: 14px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--gold);
-}
-.trace-step {
-  display: inline-block;
-  font-weight: 700;
-  animation: trace-in 0.3s var(--ease) both;
-}
-.trace-step:nth-child(3) { animation-delay: 30ms; }
-.trace-step:nth-child(4) { animation-delay: 60ms; }
-.trace-step:nth-child(5) { animation-delay: 90ms; }
-.trace-step:nth-child(n + 6) { animation-delay: 120ms; }
-.trace-sep {
-  display: inline-block;
-  width: 14px;
-  height: 2px;
-  margin: 0 8px;
-  vertical-align: middle;
-  background: var(--gold);
-}
-.trace-hint {
-  color: var(--on-navy-2);
-}
-@keyframes trace-in {
-  from {
-    opacity: 0;
-    transform: translateX(-6px);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .trace-step {
-    animation: none;
-  }
+  background: var(--navy);
+  color: var(--stock);
 }
 
 .trunk,
@@ -560,35 +504,6 @@ strong {
 }
 .stage.is-live .stage-note {
   color: var(--ink);
-}
-.stage {
-  cursor: pointer;
-}
-.stage.on-path {
-  border-color: var(--gold);
-}
-.stage::after {
-  transition: background-color 0.3s var(--ease);
-}
-.pipeline .trunk .stage.on-path::after,
-.pipeline .branch .stage.on-path::after {
-  background: var(--gold);
-}
-.branches::before,
-.branches::after {
-  transition: border-color 0.3s var(--ease), background-color 0.3s var(--ease);
-}
-.fork-on .branches::before {
-  border-color: var(--gold);
-}
-.fork-on .branches::after {
-  background: var(--gold);
-}
-.lane-name {
-  transition: color 0.3s var(--ease);
-}
-.lane-on .lane-name {
-  color: var(--stock);
 }
 
 /* connectors: trunk links, and the fork into the two branches */
@@ -735,10 +650,6 @@ strong {
 }
 .awards li.is-live {
   background: var(--gold);
-}
-.awards li,
-.method li {
-  cursor: default;
 }
 .award-name {
   font-weight: 700;

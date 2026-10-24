@@ -233,10 +233,6 @@ A sticky navy top band with a 2px night-navy bottom rule. The name mark is a red
 ### Motion: the Gold Scan
 A single motion grammar. While a sequence is at least 35% in view, gold steps through its items one at a time, rests with nothing lit, then repeats. Pipeline stages step every 480ms with a 1600ms rest, method steps every 900ms with a 1400ms rest, and award rows every 420ms with an 1800ms rest. Colour changes ease over 0.3s on `cubic-bezier(0.16, 1, 0.3, 1)`. The scan stops and clears when the sequence leaves view. Under `prefers-reduced-motion: reduce` it never starts and smooth scrolling is off. All items are fully legible at rest; the scan only adds emphasis.
 
-**Taking the gold.** Visitors can take the scan over. Pointing at a method step or award row hands it the gold and pauses the scan; leaving the list resumes it. Pipeline stages are focusable buttons: hovering, focusing or tapping one fills it gold and traces the path from the data to it. Upstream stages take a gold outline, their connectors (and the fork, for a lane stage) turn gold, and a readout under the diagram ("Path", gold label) lists the stages with gold dashes, stepping in over 0.3s with a 30ms stagger. Escape or leaving the diagram releases it. These states still work under reduced motion; only the readout's slide is dropped.
-
-**Where you are.** The top nav underlines the section crossing the middle of the viewport (2px stock bar, `aria-current`), the same bar as hover.
-
 **Copy email.** An underlined text control beside the email actions (hero and footer) copies the address and reads "Copied" for 1.8s, for visitors whose mailto opens nothing.
 
 ## Do's and Don'ts

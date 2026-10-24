@@ -2,7 +2,6 @@ import { AwardsRoll, MethodLadder } from "./Animated";
 import CopyEmail from "./CopyEmail";
 import Measure from "./Measure";
 import Pipeline from "./Pipeline";
-import SectionNav from "./SectionNav";
 import { deepscope, education, experience, featured, hydrogels, lab, profile, skills, type Link } from "./content";
 
 function Arrow() {
@@ -35,7 +34,14 @@ export default function Home() {
         <a className="mark" href="#top" aria-label="Sanjay Srinivasan, back to top">
           {profile.firstName}
         </a>
-        <SectionNav />
+        <nav aria-label="Sections">
+          <a href="#research">Research</a>
+          <a href="#skills">Skills</a>
+          <a href="#recognition">Recognition</a>
+          <a href="#lab">Lab</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+        </nav>
         <a className="top-email" href={mailto}>
           Email
         </a>
